@@ -6,8 +6,10 @@
     </li>
     <li>
       Feito seguindo os passos do Live Coding - Multiverso Spider-Man: Criando um site com HTML, CSS e JavaScript - Parte 1 e 2 da Dio.
-      <a href="https://sabrina1408.github.io/spider-man-dio/">Link do site</a>
       <a href="https://youtu.be/a29-lfFi9Qc">Link da live</a>
+    </li>
+    <li>
+      <a href="https://sabrina1408.github.io/spider-man-dio/">Link do site</a>
     </li>
     <li>
       <a href="https://sabrinaalves.tk" target="_blank" target="_blank">Meu portifólio</a>
