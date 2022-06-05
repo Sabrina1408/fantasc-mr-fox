@@ -9,6 +9,9 @@
       <a href="https://youtu.be/a29-lfFi9Qc">Link da live</a>
     </li>
     <li>
+      <a href="https://sabrina1408.github.io/spider-man-dio/">Link do site</a>
+    </li>
+    <li>
       <a href="https://sabrinaalves.tk" target="_blank" target="_blank">Meu portifólio</a>
     </li>
 </ul>
