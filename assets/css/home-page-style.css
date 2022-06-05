@@ -190,3 +190,21 @@ body[id^="fox-"] .s-card:not(.s-card--hovered) {
   transform-style: preserve-3d; /* Pra não aplicar as mesma configurações do carrosel */
   transition: transform 0.4s ease-in;
 }
+
+@media (max-width: 1100px) {
+  .s-menu {
+    margin: 25px 0;
+  }
+  .s-card {
+    width: 350px;
+  }
+  .s-controller__line {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  #tree {
+    display: none;
+  }
+}
