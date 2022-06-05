@@ -2,7 +2,7 @@
 <h1>Descrição</h1>
 <ul>
     <li>
-      Site apresentando filmes do multiverso homem-aranha.
+      Site apresentando personagens do filme O Fantastico Senhor Raposo.
     </li>
     <li>
       Feito seguindo os passos do Live Coding - Multiverso Spider-Man: Criando um site com HTML, CSS e JavaScript - Parte 1 e 2 da Dio.

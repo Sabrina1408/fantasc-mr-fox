@@ -45,8 +45,8 @@
 }
 
 .navigator ul li a:hover, .navigator ul li a.active {
-  color: var(--primary-color);
-  background-color: white;
+  color: var(--secondary-color);
+  background-color: black;
 }
 
 .navigator .navigator__icon {

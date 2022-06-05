@@ -11,7 +11,11 @@
   flex-flow: row nowrap;
 }
 
-.s-wrapper video {
+.s-wrapper video, iframe {
+  position: fixed;
+  height: 100%;
+}
+.s-back-img {
   position: fixed;
   height: 100%;
 }

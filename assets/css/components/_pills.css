@@ -8,8 +8,8 @@
 }
 
 .pills ul li {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--secondary-color);
+  color: black;
   padding: 5px 15px;
   margin: 0 10px;
   border-radius: 20px;

@@ -59,10 +59,13 @@ body::before { /* Adiciona elementos antes */
   transform: rotateY(0deg) translateZ(50vw);
 }
 .s-card:nth-child(2) {
-  transform: rotateY(120deg) translateZ(50vw);
+  transform: rotateY(90deg) translateZ(50vw);
 }
 .s-card:nth-child(3) {
-  transform: rotateY(240deg) translateZ(50vw);
+  transform: rotateY(180deg) translateZ(50vw);
+}
+.s-card:nth-child(4) {
+  transform: rotateY(270deg) translateZ(50vw);
 }
 
 .s-card__background {
@@ -125,6 +128,9 @@ body::before { /* Adiciona elementos antes */
 .s-controller__button:nth-child(2) {
   margin: 0 3.75rem;
 }
+.s-controller__button:nth-child(3) {
+  margin-right: 3.75rem;
+}
 
 .s-controller__button--active {
   background-color: white;
@@ -152,21 +158,24 @@ body::before { /* Adiciona elementos antes */
   filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5)); /* sombra */
 }
 
-body#spider-man-01-hovered::before {
-  background-image: url(../../assets/images/pic-sm-bg-01.jpg);
+body#fox-1-hovered::before {
+  background-image: url(../../assets/images/pic-fox-bg-01.jpg);
 }
-body#spider-man-02-hovered::before {
-  background-image: url(../../assets/images/pic-sm-bg-02.jpg);
+body#fox-2-hovered::before {
+  background-image: url(../../assets/images/pic-fox-bg-02.jpg);
 }
-body#spider-man-03-hovered::before {
-  background-image: url(../../assets/images/pic-sm-bg-03.jpg);
+body#fox-3-hovered::before {
+  background-image: url(../../assets/images/pic-fox-bg-03.jpg);
+}
+body#fox-4-hovered::before {
+  background-image: url(../../assets/images/pic-fox-bg-03.jpg);
 }
 
-body[id^="spider-man-"]::before { /* ? */
+body[id^="fox-"]::before { /* ? */
   opacity: 1;
 }
 
-body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
+body[id^="fox-"] .s-card:not(.s-card--hovered) {
   filter: grayscale(100%);
 }
 

@@ -9,7 +9,7 @@ a.link-button .icon{
   width: 32px;
   height: 32px;
   padding: 3px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   border: solid 1px white;
   background-clip: content-box;
   border-radius: 50%;
@@ -20,7 +20,7 @@ a.link-button .icon{
 }
 
 a.link-button .icon .play-icon {
-  border: solid 7px white;
+  border: solid 7px black;
   width: 0;
   height: 0;
   border-top-color: transparent;
