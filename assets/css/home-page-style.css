@@ -9,7 +9,7 @@ body {
 
 body::before { /* Adiciona elementos antes */
   content: ""; /* É obrigatório */
-  background-image: url(../../assets/images/spider-man-background.jpg);
+  background-image: url(../../assets/images/pic-fox-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -192,9 +192,6 @@ body[id^="fox-"] .s-card:not(.s-card--hovered) {
 }
 
 @media (max-width: 1100px) {
-  .s-menu {
-    margin: 25px 0;
-  }
   .s-card {
     width: 350px;
   }
@@ -204,7 +201,44 @@ body[id^="fox-"] .s-card:not(.s-card--hovered) {
 }
 
 @media (max-width: 600px) {
+  .s-menu__item {
+    padding: 0px 0;
+  }
   #tree {
     display: none;
+  }
+  .s-card__title {
+    transition: none;
+  }
+  .s-card--hovered .s-card__title {
+    bottom: 0;
+  }
+  .s-card--hovered .s-card__background { /* s-card__background dentro do hovered */
+    cursor: pointer;
+    opacity: 100;
+  }
+  .s-card--hovered .s-card__image {
+    transform: none; 
+    filter: none; 
+  }
+  .s-controller__button:hover {
+    transform: none; /* Aumentar */
+  }
+  body#fox-1-hovered::before, body#fox-2-hovered::before, body#fox-3-hovered::before, body#fox-4-hovered::before {
+    background-image: url(../../assets/images/pic-fox-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Pra ficar em cima */
+    opacity: 0.2;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+  }
+  body[id^="fox-"]::before { /* ? */
+    opacity: none;
+  }
+  body[id^="fox-"] .s-card:not(.s-card--hovered) {
+    filter: none;
   }
 }
