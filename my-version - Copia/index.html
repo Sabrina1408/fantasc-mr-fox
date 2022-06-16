@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/home-page-style.css">
+  <link rel="shortcut icon" href="assets/images/icons/tree.png" type="image/x-icon">
+  <script src="assets/scripts/scriptjs"></script>
+  <title>O Fantástico Sr. Raposo</title> <!-- Classes - Bem-css: Bloco elemento e modificador  -->
+</head>
+<body>
+  <nav class="s-menu"> <!-- fox-menu -->
+    <ul>
+      <li class="s-menu__item">
+        <a href="pages/sr-raposo/fox.html">Sr. Raposo</a> <!-- bloco__elemento -->
+      </li>
+      <li class="s-menu__item">
+        <a href="pages/sra-raposa/fox.html">Sra.Raposa</a>
+      </li>
+      <li class="s-menu__item s-menu-icon" id="tree">
+        <a href="#"><img src="assets/images/icons/tree.png" alt="Simbolo de ávore"></a>
+      </li>
+      <li class="s-menu__item">
+        <a href="pages/ash/fox.html">Ash</a>
+      </li>
+      <li class="s-menu__item">
+        <a href="pages/kristofferson/fox.html">Kristofferson</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="s-container">
+    <div class="s-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+      <a href="pages/sr-raposo/fox.html" class="s-card" id="fox-1">
+        <img class="s-card__background" src="assets/images/pic-fox-bg-01.jpg" alt="Imagem de cidade com 3 fazendas">
+        <img class="s-card__image" src="assets/images/sr-raposo.png" alt="Sr. Raposo">
+        <h2 class="s-card__title">Sr.Raposo</h2>
+      </a>
+      <a href="pages/sra-raposa/fox.html" class="s-card" id="fox-2">
+        <img class="s-card__background " src="assets/images/pic-fox-bg-02.jpg" alt="Imagem do quarto com comidas">
+        <img class="s-card__image" src="assets/images/sra-raposa.png" alt="Sra Raposa">
+        <h2 class="s-card__title">Sra.Raposa</h2>
+      </a>
+      <a href="pages/ash/fox.html" class="s-card"  id="fox-3">
+        <img class="s-card__background" src="assets/images/pic-fox-bg-03.jpg" alt="Imagem do quarto do Ash">
+        <img class="s-card__image" src="assets/images/ash.png" alt="Ash">
+        <h2 class="s-card__title">Ash</h2>
+      </a>
+      <a href="pages/kristofferson/fox.html" class="s-card"  id="fox-4">
+        <img class="s-card__background" src="assets/images/pic-fox-bg-03.jpg" alt="Imagem do quarto do Ash">
+        <img class="s-card__image" src="assets/images/kristofferson-1.png" alt="Kristofferson">
+        <h2 class="s-card__title">Kristofferson</h2>
+      </a>
+    </div>
+  </main>
+  <section class="s-controller">
+    <div id="1" onclick="selectCarouselItem(this)" class="s-controller__button s-controller__button--active">
+      01
+    </div>
+    <div id="2" onclick="selectCarouselItem(this)" class="s-controller__button">
+      02
+    </div>
+    <div id="3" onclick="selectCarouselItem(this)" class="s-controller__button">
+      03
+    </div>
+    <div id="4" onclick="selectCarouselItem(this)" class="s-controller__button">
+      04
+    </div>
+    <div class="s-controller__line"></div>
+  </section>
+</body>
+</html>

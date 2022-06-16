@@ -1,0 +1,247 @@
+@import url(reset.css);
+@import url(global.css);
+
+/* A transition/transform tem que estar no outro elemento principal */
+
+body {
+  background-color: var(--primary-color);
+}
+
+body::before { /* Adiciona elementos antes */
+  content: ""; /* É obrigatório */
+  background-image: url(../../assets/images/pic-fox-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Pra ficar em cima */
+  opacity: 0.2;
+  transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.s-menu {
+  padding: 1rem 0;
+  width: 100%; /* Não sei se precia */
+  text-align: center;
+  position: relative; /* Pra ficar por cima do before */
+}
+
+.s-menu__item {
+  display: inline-block; /* ou flex */
+  text-transform: uppercase;
+  margin: 0 1.25rem;
+}
+
+.s-menu-icon {
+  width: 2.5rem;
+  margin: 0 1.25rem;
+  vertical-align: middle; /* ou flex */
+}
+
+.s-container {
+  position: relative; /* Pra ficar por cima do before */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; /* Distribui entre espaços iguais */
+  perspective: 3000px;
+}
+
+.s-card {
+  border: 0.5rem solid white;
+  width: 100%; /* Dividido por 3 pq são 3 cards */
+  height: 70vh;
+  position: absolute;
+  transition: filter .5s ease-in-out;
+}
+
+.s-card:nth-child(1) {
+  transform: rotateY(0deg) translateZ(50vw);
+}
+.s-card:nth-child(2) {
+  transform: rotateY(90deg) translateZ(50vw);
+}
+.s-card:nth-child(3) {
+  transform: rotateY(180deg) translateZ(50vw);
+}
+.s-card:nth-child(4) {
+  transform: rotateY(270deg) translateZ(50vw);
+}
+
+.s-card__background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ocupar 100% do espaço */
+  position: absolute;
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Qunado for opacity */
+}
+
+.s-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Proporção automatica */
+  position: relative;
+  transition: 1s ease-in-out;
+}
+
+.s-card__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: bottom 1s ease-in-out;
+}
+
+.s-controller {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  bottom: 1.5rem;
+  width: 100%;
+}
+
+.s-controller__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid white;
+  border-radius:50%;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1; /* Pra ficar em cima da linha */
+  transition: transform 0.3s ease-in-out; /* Quando usar o transform, ease-in-out vai aumentar o tempo com o tempo */
+}
+
+.s-controller__button:hover {
+  transform: scale(1.1); /* Aumentar */
+}
+
+.s-controller__button:nth-child(2) {
+  margin: 0 3.75rem;
+}
+.s-controller__button:nth-child(3) {
+  margin-right: 3.75rem;
+}
+
+.s-controller__button--active {
+  background-color: white;
+  color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  outline: 0.125rem solid white;
+}
+
+.s-controller__line {
+  background-color: white;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+}
+
+/* Hover Animation */
+
+.s-card--hovered .s-card__background { /* s-card__background dentro do hovered */
+  cursor: pointer;
+  opacity: 0;
+}
+
+.s-card--hovered .s-card__image {
+  transform: scale(1.4); /* Pra frente */
+  filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5)); /* sombra */
+}
+
+body#fox-1-hovered::before {
+  background-image: url(../../assets/images/pic-fox-bg-01.jpg);
+}
+body#fox-2-hovered::before {
+  background-image: url(../../assets/images/pic-fox-bg-02.jpg);
+}
+body#fox-3-hovered::before {
+  background-image: url(../../assets/images/pic-fox-bg-03.jpg);
+}
+body#fox-4-hovered::before {
+  background-image: url(../../assets/images/pic-fox-bg-03.jpg);
+}
+
+body[id^="fox-"]::before { /* ? */
+  opacity: 1;
+}
+
+body[id^="fox-"] .s-card:not(.s-card--hovered) {
+  filter: grayscale(100%);
+}
+
+.s-card--hovered .s-card__title {
+  bottom: 50%;
+}
+
+.s-cards-carousel {
+  display: flex;
+  justify-content: center;
+  width: calc(100vw / 3 - 10%);
+  transform-style: preserve-3d; /* Pra não aplicar as mesma configurações do carrosel */
+  transition: transform 0.4s ease-in;
+}
+
+@media (max-width: 1100px) {
+  .s-card {
+    width: 300px;
+  }
+  .s-controller__line {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .s-menu {
+    padding: 5vh 0;
+  }
+  #tree {
+    display: none;
+  }
+  .s-card {
+    width: 300px;
+  }
+  .s-card__title {
+    transition: none;
+  }
+  .s-card--hovered .s-card__title {
+    bottom: 0;
+  }
+  .s-card--hovered .s-card__background { /* s-card__background dentro do hovered */
+    cursor: pointer;
+    opacity: 100;
+  }
+  .s-card--hovered .s-card__image {
+    transform: none; 
+    filter: none; 
+  }
+  .s-controller__button:hover {
+    transform: none; /* Aumentar */
+  }
+  body#fox-1-hovered::before, body#fox-2-hovered::before, body#fox-3-hovered::before, body#fox-4-hovered::before {
+    background-image: url(../../assets/images/pic-fox-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Pra ficar em cima */
+    opacity: 0.2;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+  }
+  body[id^="fox-"]::before { /* ? */
+    opacity: none;
+  }
+  body[id^="fox-"] .s-card:not(.s-card--hovered) {
+    filter: none;
+  }
+}
