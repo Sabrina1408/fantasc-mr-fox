@@ -193,7 +193,7 @@ body[id^="fox-"] .s-card:not(.s-card--hovered) {
 
 @media (max-width: 1100px) {
   .s-card {
-    width: 350px;
+    width: 300px;
   }
   .s-controller__line {
     width: 80%;
@@ -201,11 +201,14 @@ body[id^="fox-"] .s-card:not(.s-card--hovered) {
 }
 
 @media (max-width: 600px) {
-  .s-menu__item {
-    padding: 0px 0;
+  .s-menu {
+    padding: 5vh 0;
   }
   #tree {
     display: none;
+  }
+  .s-card {
+    width: 300px;
   }
   .s-card__title {
     transition: none;
