@@ -9,6 +9,7 @@
   display: flex;
   height: 100vh;
   flex-flow: row nowrap;
+  /* justify-content: center; */
 }
 
 /* .s-wrapper video, iframe {
@@ -35,12 +36,12 @@
 .s-wrapper .s-main-content{
   height: 100%;
   width: 100%;
-  padding-left: 130px;
+  padding-left: 110px; /* 130px */
   position: relative;
 }
 
 .s-wrapper .s-main-content__top {
-  height: 80vh;
+  /* height: 80vh; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -50,7 +51,7 @@
   height: 20vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
 .s-wrapper .s-main-content .s-logo img {
