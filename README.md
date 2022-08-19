@@ -1,4 +1,4 @@
-![_C__Users_sabri_OneDrive_%C3%81rea%20de%20Trabalho_Estudos_dio_dio-spiderman-my_index html](https://user-images.githubusercontent.com/88604193/169666384-519a6063-b817-41a6-b596-3bf55501c687.png)
+![image](https://user-images.githubusercontent.com/88604193/185621761-f79e1acd-82a2-4f50-ba6d-6e1b5acd74d6.png)
 <h1>Descrição</h1>
 <ul>
     <li>
