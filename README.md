@@ -17,7 +17,7 @@
 </ul>
 <h1>Status</h1>
 <ul>
-  <li>Semi-finalizado, irei implementar a responsividade para dispositivos movéis.</li>
+  <li>Finalizado.</li>
 </ul>
 <h1>Aprendizado</h1>
 <ul>
