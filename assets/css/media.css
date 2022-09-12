@@ -1,0 +1,33 @@
+@media (min-width: 1715px) {
+  .s-back-img {
+    width: 100% ;
+  }
+}
+@media (max-width: 768px) {
+  aside {
+    display: none; /* Não está indo */
+    visibility: hidden;
+  }
+  .s-wrapper .s-main-content {
+    padding-left: 0px !important;
+  }
+  .s-main-content__top, .s-main-content__bottom {
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 440px) {
+    .gallery ul li a img {
+      width: 260px !important;
+      height: 150px !important;
+    }
+    .pills ul {
+      flex-wrap: wrap;
+      margin: 0 !important;
+      gap: 20px;
+      justify-content: center;
+    }
+    .pills ul li:first-child {
+      margin-left: 10px !important;
+    }
+  }
+}
