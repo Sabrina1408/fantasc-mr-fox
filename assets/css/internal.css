@@ -4,7 +4,7 @@
 @import url(../css/components/_navigator.css); /* Componente de navegação pra reutilizar depois */
 @import url(../css/components/_pills.css);
 @import url(../css/components/_link-button.css);
-@import url(../css/components/_gallery.css);
+@import url(../css/components/gallery.css);
 /* Colocar _na frente do nome */
 
 .s-wrapper {
