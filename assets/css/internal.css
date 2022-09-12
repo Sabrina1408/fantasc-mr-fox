@@ -1,9 +1,9 @@
 @import url(global.css);
 @import url(reset.css);
 @import url(media.css);
-@import url(../css/components/_navigator.css); /* Componente de navegação pra reutilizar depois */
-@import url(../css/components/_pills.css);
-@import url(../css/components/_link-button.css);
+@import url(../css/components/navigator.css); /* Componente de navegação pra reutilizar depois */
+@import url(../css/components/pills.css);
+@import url(../css/components/link-button.css);
 @import url(../css/components/gallery.css);
 /* Colocar _na frente do nome */
 
