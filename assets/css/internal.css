@@ -1,5 +1,6 @@
 @import url(global.css);
 @import url(reset.css);
+@import url(media.css);
 @import url(../css/components/_navigator.css); /* Componente de navegação pra reutilizar depois */
 @import url(../css/components/_pills.css);
 @import url(../css/components/_link-button.css);
@@ -44,6 +45,7 @@
   /* height: 80vh; */
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
 }
 
@@ -51,6 +53,7 @@
   height: 20vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* justify-content: flex-end; */
 }
 

@@ -5,7 +5,7 @@
   --secondary-color: #FFE618;
 }
 
-h1 {
+.s-logo a {
   color: var(--secondary-color);
   text-transform: uppercase;
   font-size: clamp(2rem, 10vw + 0.1rem, 10rem); /* 10rem */
