@@ -11,23 +11,23 @@
   .s-wrapper .s-main-content {
     padding-left: 0px !important;
   }
-  .s-main-content__top, .s-main-content__bottom {
+  /* .s-main-content__top, .s-main-content__bottom {
     display: flex;
     align-items: center;
-  }
+  } */
+}
   @media (max-width: 440px) {
     .gallery ul li a img {
-      width: 260px !important;
-      height: 150px !important;
+      width: 260px;
+      height: 150px;
     }
     .pills ul {
       flex-wrap: wrap;
-      margin: 0 !important;
+      margin: 0;
       gap: 20px;
       justify-content: center;
     }
     .pills ul li:first-child {
-      margin-left: 10px !important;
+      margin-left: 10px;
     }
-  }
 }
