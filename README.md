@@ -1,25 +1,20 @@
 ![image](https://user-images.githubusercontent.com/88604193/185621761-f79e1acd-82a2-4f50-ba6d-6e1b5acd74d6.png)
-<h1>Descrição</h1>
+<h1>👩🏽‍💻 Fantastic mr fox webpage</h1>
+<p>Site apresentando personagens do filme O Fantastico Senhor Raposo. Feito seguindo os passos do Live Coding - Multiverso Spider-Man: Criando um site com HTML, CSS e JavaScript - Parte 1 e 2 da Dio.</p>
+<h2>🎯 Links</h2>
 <ul>
     <li>
-      Site apresentando personagens do filme O Fantastico Senhor Raposo.
-    </li>
-    <li>
-      Feito seguindo os passos do Live Coding - Multiverso Spider-Man: Criando um site com HTML, CSS e JavaScript - Parte 1 e 2 da Dio.
       <a href="https://youtu.be/a29-lfFi9Qc"  target="_blank">Link da live</a>
     </li>
     <li>
       <a href="https://sabrina1408.github.io/fantasc-mr-fox/"  target="_blank">Link do site</a>
     </li>
     <li>
-      <a href="https://sabrinaalves.tk" target="_blank">Meu portifólio</a>
+      <a href="https://sabrinaalvesbrito.com.br" target="_blank">Meu portifólio</a>
     </li>
 </ul>
-<h1>Status</h1>
-<ul>
-  <li>Finalizado.</li>
-</ul>
-<h1>Aprendizado</h1>
+<h2>👽 Status - Finalizado</h2>
+<h2>🧐 Aprendizado</h2>
 <ul>
   <li>Dom.</li>
   <li>Animações com trasform e translate.</li>
